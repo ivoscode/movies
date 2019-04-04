@@ -37,6 +37,21 @@ export default MoviesList;
 const MovieGrid = styled.div`
   display: grid;
   padding: 1rem;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 1rem;
+
+  @media only screen and (min-width: 550px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media only screen and (min-width: 700px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media only screen and (min-width: 850px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media only screen and (min-width: 1000px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 `;

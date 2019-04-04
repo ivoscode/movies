@@ -55,21 +55,27 @@ export default MovieDetail;
 
 const MovieWrapper = styled.div`
   position: relative;
-  padding-top: 50vh;
+  padding-top: 20vh;
   background: url(${props => props.backdrop}) no-repeat;
   background-size: cover;
+  @media only screen and (min-width: 650px) {
+    padding-top: 50vh;
+  }
 `;
 
 const MovieInfo = styled.div`
   background: white;
   text-align: left;
   padding: 2rem 10%;
-  display: flex;
+
   > div {
     margin-left: 20px;
   }
   img {
     position: relative;
     top: -5rem;
+  }
+  @media only screen and (min-width: 650px) {
+    display: flex;
   }
 `;
